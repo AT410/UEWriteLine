@@ -4,16 +4,20 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "TestActor.generated.h"
+#include "MapActor.generated.h"
 
 UCLASS()
-class GAMEPROJECT_API ATestActor : public AActor
+class GAMEPROJECT_API AMapActor : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ATestActor();
+	AMapActor();
+
+	UPROPERTY(EditAnyWhere)
+		bool TestFlag;
+
 
 protected:
 	// Called when the game starts or when spawned
