@@ -15,14 +15,15 @@ public:
 	// Sets default values for this actor's properties
 	AMapActor();
 
-	UPROPERTY(EditAnyWhere)
-		bool TestFlag;
+	UPROPERTY(BluePrintReadWrite, Category ="MyTest") bool TestFlag;
 
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UFUNCTION(BlueprintCallable, Category = "MapFunc")
+		virtual void SetMapFile();
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

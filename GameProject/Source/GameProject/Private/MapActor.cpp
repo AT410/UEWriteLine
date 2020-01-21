@@ -18,6 +18,11 @@ void AMapActor::BeginPlay()
 	
 }
 
+void AMapActor::SetMapFile()
+{
+
+}
+
 // Called every frame
 void AMapActor::Tick(float DeltaTime)
 {
